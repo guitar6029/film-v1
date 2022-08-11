@@ -10,6 +10,7 @@ import WatchList from './Components/WatchList/WatchList';
 import { FilmItemContext } from './Context/FilmItemContext';
 import { NotificationContext } from './Context/NotificationContext';
 import { SearchInputContext } from './Context/SearchInputContext';
+import { ProtectedRoute } from './Context/ProtectedRoute';
 import axios from 'axios';
 
 import './App.css';
@@ -224,12 +225,19 @@ function App() {
         <FilmItemContext>
 
           <Routes>
+            
             <Route path="/" element={<Main filmData={filmData} filmFeatured={featuredTodayFilms} filmExclusive={exclusiveVideos} addToWatchList={handleAddToWatchList} getFilmID={getIDForRoute} />} />
-            <Route path="/user/account" element={<Account />} />
+            
+            <Route path="/user/account" element={<ProtectedRoute><Account /></ProtectedRoute>} />
+            
             <Route path='/register/signin' element={<Signin />} />
+            
             <Route path="/register" element={<Register />} />
+
             <Route path={routeID} element={<IndividualPage id={routeID} />} />
-            <Route path='/user/account/watchlist' element={<WatchList filmAddedToWatchList={filmData} removeWatchItemList={handleRemoveWatchItemList} />} />
+           
+            <Route path='/user/account/watchlist' element={<ProtectedRoute><WatchList filmAddedToWatchList={filmData} removeWatchItemList={handleRemoveWatchItemList} /></ProtectedRoute>} />
+            
           </Routes>
 
         </FilmItemContext>
