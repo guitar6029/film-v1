@@ -1,0 +1,12 @@
+.section__filmTitle{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.section__filmWatchlist:hover{
+    transition: background 0.2s ease-in;
+    background: #0e0d0e00;
+    color: #fff;
+}

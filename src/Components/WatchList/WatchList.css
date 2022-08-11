@@ -1,0 +1,5 @@
+.watchlist{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}

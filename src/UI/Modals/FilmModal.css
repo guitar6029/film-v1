@@ -1,0 +1,87 @@
+.film__modal{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    width: 500px;
+    min-height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    
+}
+
+.film__modal__divisonSection{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.film__modal__userOptions__btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.film__modal__rightSide{
+    margin: 10px;
+}
+
+
+.film__modal__image > img{
+    width: 72px;
+    height: 106px;
+}
+
+
+.closeFilmModal{
+    cursor: pointer;
+    color: #f0f0f0;
+    font-size: 2em;
+    position: relative;
+    justify-self: start;
+    align-self: end;
+    top: -3em;
+    left: 10px
+}
+
+
+.film__watchOptions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 7px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.watchNow{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+@media screen and (max-width: 540px ){
+    .film__modal{
+        width: 300px;
+    }
+    .closeFilmModal{
+        top: -2em;        
+    }
+}

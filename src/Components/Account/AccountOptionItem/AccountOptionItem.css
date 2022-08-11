@@ -1,0 +1,25 @@
+.section__option {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #211e1e;
+    color: var(--main-text-color);
+    padding: 10px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+
+}
+
+a>.section__option__title {
+    text-align: center;
+}
+
+.section__option>a>.icon {
+    font-size: 10em;
+    color: var(--main-title-color);
+}

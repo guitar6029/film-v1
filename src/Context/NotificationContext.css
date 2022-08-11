@@ -1,0 +1,27 @@
+.notification__wrapper {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    font-size: 20px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    
+}
+
+.notification__item{
+    margin-bottom:  20px;
+    border-radius: 10px;
+}
+
+.success {
+    background-color: #21a721fe;
+}
+
+.error {
+    background-color: #d71717;
+}
+
+.info {
+    background-color: #385ac9fe;
+}

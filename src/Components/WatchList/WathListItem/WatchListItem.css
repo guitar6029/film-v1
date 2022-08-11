@@ -1,0 +1,87 @@
+.removeWatchItem {
+    font-size: 3em !important;
+}
+
+.removeWatchItem:hover{
+    color: red;
+}
+
+.section__info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section__info  {
+    margin: 1px;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.section__watchlist {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color: #131212;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.section__watchlist__icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.section__watchlist__img > img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+
+.section__watchlist__title {
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+    align-self: center;
+
+}
+
+.section__watchlist__title > h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.section__watchlist__year {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 820px){
+    .section__watchlist__title{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section__watchlist__title{
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    /* .section__watchlist__title{
+        width: 50px;
+    } */
+    .section__watchlist__title{
+        display: none;
+    }
+}
